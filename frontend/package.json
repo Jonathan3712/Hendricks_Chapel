@@ -20,7 +20,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://github.com/Jonathan3712/Evangelical-Chaplaincy/",
+  "homepage": ".",
   "eslintConfig": {
     "extends": [
       "react-app",

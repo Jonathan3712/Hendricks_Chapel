@@ -14,7 +14,7 @@ const ContactForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:4000/api/contact', {
+      const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, {
         name: formData.name,
         email: formData.email,
         message: formData.message

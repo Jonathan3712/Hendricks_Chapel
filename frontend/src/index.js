@@ -26,3 +26,4 @@ root.render(
 //   </Provider>,
 //   document.getElementById('root')
 // );
+// "homepage": "https://github.com/Jonathan3712/Evangelical-Chaplaincy/", this is from the package.json in the frontend directory

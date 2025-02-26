@@ -6,7 +6,8 @@ const EventList = () => {
   const [events, setEvents] = useState([]);
   const [error, setError] = useState(null);
   useEffect(() => {
-    axios.get('http://localhost:4000/api/events')
+    axios.get(`${process.env.REACT_APP_BACKEND_URL}/api/contact`)
+    // 'http://localhost:4000/api/events'
       .then(response => {
         console.log('Fetched events from API:', response.data);  // Add this to see the response data
         setEvents(response.data);
