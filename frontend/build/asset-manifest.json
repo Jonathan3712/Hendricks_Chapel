@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b5f5376b.css",
-    "main.js": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.9c45ea6d.js",
+    "main.css": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b2671001.css",
+    "main.js": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.84d8aba2.js",
+    "static/media/video1.mp4": "/Jonathan3712/Evangelical-Chaplaincy/static/media/video1.95d4c3aebab97a8bc165.mp4",
+    "static/media/Image4.jpg": "/Jonathan3712/Evangelical-Chaplaincy/static/media/Image4.0a586a7a116327a26d9f.jpg",
+    "static/media/Image1.jpg": "/Jonathan3712/Evangelical-Chaplaincy/static/media/Image1.355ae2d2657ea0225c36.jpg",
+    "static/media/Image2.jpg": "/Jonathan3712/Evangelical-Chaplaincy/static/media/Image2.c1d71518656934f11bd5.jpg",
+    "static/media/Image5.jpg": "/Jonathan3712/Evangelical-Chaplaincy/static/media/Image5.1f94475e0a1d28bb78c8.jpg",
+    "static/media/Image3.jpg": "/Jonathan3712/Evangelical-Chaplaincy/static/media/Image3.9172744830f081f01649.jpg",
     "index.html": "/Jonathan3712/Evangelical-Chaplaincy/index.html",
-    "main.b5f5376b.css.map": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b5f5376b.css.map",
-    "main.9c45ea6d.js.map": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.9c45ea6d.js.map"
+    "main.b2671001.css.map": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b2671001.css.map",
+    "main.84d8aba2.js.map": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.84d8aba2.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5f5376b.css",
-    "static/js/main.9c45ea6d.js"
+    "static/css/main.b2671001.css",
+    "static/js/main.84d8aba2.js"
   ]
 }
