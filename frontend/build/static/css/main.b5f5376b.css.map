@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.b5f5376b.css","mappings":"AAAA,KAGE,wBAAyB,CACzB,aAAc,CAFd,4BAA8B,CAG9B,WAAY,CAJZ,iBAKF","sources":["App.css"],"sourcesContent":[".App {\n  text-align: center;\n  font-family: Arial, sans-serif;\n  background-color: #f76900;\n  color: #000e54;\n  padding: 3px;\n}"],"names":[],"sourceRoot":""}

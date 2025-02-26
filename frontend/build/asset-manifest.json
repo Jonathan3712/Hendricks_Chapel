@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b5f5376b.css",
+    "main.js": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.9c45ea6d.js",
+    "index.html": "/Jonathan3712/Evangelical-Chaplaincy/index.html",
+    "main.b5f5376b.css.map": "/Jonathan3712/Evangelical-Chaplaincy/static/css/main.b5f5376b.css.map",
+    "main.9c45ea6d.js.map": "/Jonathan3712/Evangelical-Chaplaincy/static/js/main.9c45ea6d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b5f5376b.css",
+    "static/js/main.9c45ea6d.js"
+  ]
+}
