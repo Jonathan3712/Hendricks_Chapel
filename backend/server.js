@@ -7,8 +7,10 @@ const app = express();
 const PORT = process.env.PORT || 4000;
 
 // Middleware
-app.use(cors());
+// app.use(cors());
+app.use(cors({ origin: "*" })); // Allow all origins
 app.use(express.json());
+
 app.use((req, res, next) => {
   // console.log(`Request: ${req.method} ${req.url}`);
   // console.log('Body:', req.body);
