@@ -31,17 +31,21 @@ const Registration = mongoose.model('Registration', RegistrationSchema);
 //   }
 // });
 
+// POST endpoint for registration
 router.post('/register', async (req, res) => {
+  console.log("Received Registration Request:", req.body); // Debugging Log
+
   try {
-      console.log("Received registration request:", req.body); // Debugging
       const { firstName, lastName, graduationYear } = req.body;
       if (!firstName || !lastName || !graduationYear) {
+          console.log("Error: Missing Fields");
           return res.status(400).json({ error: "All fields are required" });
       }
-      
+
       const newRegistration = new Registration({ firstName, lastName, graduationYear });
       await newRegistration.save();
-      
+
+      console.log("Registration Successful:", newRegistration);
       res.json({ message: "Registration successful" });
   } catch (error) {
       console.error("Error saving registration:", error);
