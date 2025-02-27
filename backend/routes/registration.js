@@ -2,11 +2,18 @@ const express = require('express');
 const router = express.Router();
 const mongoose = require('mongoose');
 
+// // Define Registration schema
+// const RegistrationSchema = new mongoose.Schema({
+//   firstName: String,
+//   lastName: String,
+//   graduationYear: Number
+// });
+
 // Define Registration schema
 const RegistrationSchema = new mongoose.Schema({
-  firstName: String,
-  lastName: String,
-  graduationYear: Number
+  firstName: { type: String, required: true },
+  lastName: { type: String, required: true },
+  graduationYear: { type: Number, required: true }
 });
 
 const Registration = mongoose.model('Registration', RegistrationSchema);

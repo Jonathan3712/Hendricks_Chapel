@@ -16,6 +16,7 @@ const RegistrationForm = () => {
     try {
       // const response = await axios.post('http://localhost:4000/api/register', formData);
       const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/api/contact`, formData);
+      console.log("Sending data:", formData);
       // `${process.env.REACT_APP_BACKEND_URL}/api/contact`, formData
       setSuccessMessage(response.data.message);
       setFormData({ firstName: '', lastName: '', graduationYear: '' });
