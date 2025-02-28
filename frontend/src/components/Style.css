@@ -52,8 +52,8 @@ html, .App {
   }
 
   .slider-container {
-    width: 600px;
-    height: 300px;
+    width: 700px;
+    height: 400px;
     margin: 2% auto;
     overflow: hidden;
     position: relative;
@@ -64,7 +64,8 @@ html, .App {
   
   .event-image {
     width: 100%;
-    aspect-ratio: 16/9; /* Automatically resizes the height based on width */
+    height: auto; /* Adjusts height automatically */
+    max-height: 300px; /* Prevents it from getting too big */
     object-fit: cover;
     border-radius: 8px;
   }
