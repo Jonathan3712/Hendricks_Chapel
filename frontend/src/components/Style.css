@@ -24,7 +24,7 @@ html, .App {
 .head_of {
     background-color: #000e54;
     color: white;
-    padding: 15px 10px; /* added for Mobile Screen */
+    padding: 20px;
     text-align: center;
     position: relative;
     z-index: 100;
@@ -75,13 +75,11 @@ html, .App {
 /* EventSlider.js */
   .event-slider-container {
     display: flex;
-    flex-direction: column; /* added for Mobile Screens */
     align-items: center;
     justify-content: center;
-    width: 100%; /* added for Mobile Screens */
-    /*gap: 20px;  Space between elements *//* removed for Mobile Screens */
+    gap: 20px; /* Space between elements */
     background-color: #ffffff; /* White background */
-    padding: 10px 0; /* added for Mobile Screens */
+    padding: 20px;
   }
   
   /* .event-content {
@@ -113,8 +111,8 @@ html, .App {
     background-color: #000e54; /* Dark blue buttons */
     color: #ffffff;
     border: none;
-    padding: 8px 12px; /* added for Mobile Screen */
-    font-size: 14px; /* added for Mobile Screen */
+    padding: 10px 15px;
+    font-size: 20px;
     cursor: pointer;
     transition: background 0.3s ease;
   }
@@ -298,20 +296,14 @@ html, .App {
   }
 
   .registration-container {
-    /* max-width: 500px;
+    max-width: 500px;
     margin: 2% auto;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    background-color: #ACBFA4; */
-    width: 90%;
-    max-width: 400px;
-    margin: 20px auto;
-    padding: 15px;
-    background-color: #E2E8CE;
-    border-radius: 8px;
+    background-color: #ACBFA4;
   }
   
   .registration-form {
@@ -547,6 +539,5 @@ html, .App {
   .slide-image {
     width: 80%;
     max-width: 280px;
-}
-}
+}}
   
