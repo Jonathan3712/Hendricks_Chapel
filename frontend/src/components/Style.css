@@ -62,18 +62,18 @@ html, .App {
     
   }
   
-  /* .slide-image {
+  .event-image {
     width: 100%;
-    height: 100%;
-    object-fit: fill;
-    transition: opacity 1s ease-in-out;
-  } */
-  .slide-image {
-    width: 100%;
-    height: 400px; /* Adjust the height as needed */
-    object-fit: cover; /* Maintains aspect ratio, fills container */
+    aspect-ratio: 16/9; /* Automatically resizes the height based on width */
+    object-fit: cover;
     border-radius: 8px;
   }
+  /* .slide-image {
+    width: 100%;
+    height: 400px; /* Adjust the height as needed *
+    object-fit: cover; /* Maintains aspect ratio, fills container *
+    border-radius: 8px;
+  } */
 /* EventSlider.js */
   .event-slider-container {
     display: flex;
