@@ -63,8 +63,8 @@ html, .App {
   }
   
   .event-image {
-    width: 90%; /* Reduce size while keeping responsiveness */
-    height: 250px; /* Adjust height slightly */
+    width: 50%; /* Reduce size while keeping responsiveness */
+    height: 150px; /* Adjust height slightly */
     object-fit: contain; /* Ensures it fills the frame without stretching */
     border-radius: 8px;
     display: block;
