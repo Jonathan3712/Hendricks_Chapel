@@ -5,7 +5,7 @@ import "../App.css"; // Make sure this path is correct
 const events = [
   { id: 1, title: "Friendship Luncheon", description: "Every Thursday from 12:00pm to 01:00pm (Indian Food)" },
   { id: 2, title: "Worship and Bible Study", description: "Every Wednesday from 07:00pm to 08:30pm (Snacks - Pizza)" },
-  { id: 3, title: "Event 3", description: "Sed do eiusmod tempor incididunt." }
+  { id: 3, title: "Sunday Church Service", description: "International Friendship Evangelical" }
 ];
 
 const EventSlider = () => {

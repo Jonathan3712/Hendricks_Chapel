@@ -272,25 +272,4 @@ textarea {
   .podcast-card {
     width: 80%;
   }
-
-  /* ✅ Move Slider Buttons Below the Event on Small Screens */
-  .event-slider-container {
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-  }
-  
-  /* ✅ Position buttons below the event content */
-  .slider-controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px; /* Space between buttons */
-    margin-top: 10px;
-  }
-
-  .slider-btn {
-    position: static; /* Remove absolute positioning */
-    display: inline-block;
-    margin: 5px; /* Spacing */
-  }
 }
