@@ -28,7 +28,9 @@ mongoose.connect(process.env.MONGO_URI, {
 // Import routes
 const registrationRoutes = require('./routes/registration');
 const contactRoutes = require('./routes/contact');
+const exportRoutes = require("./routes/export");
 
+app.use("/api", exportRoutes);
 app.use('/api', registrationRoutes);
 app.use('/api', contactRoutes);
 
