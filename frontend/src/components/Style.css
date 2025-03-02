@@ -65,6 +65,21 @@ body, html {
   background-color: #ffffff;
   padding: 20px;
 }
+/* Button positioning for larger screens */
+.slider-btn {
+  background-color: #000e54;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+/* Button hover effect */
+.slider-btn:hover {
+  background-color: #FF7F11;
+}
 .event-content {
   background: linear-gradient(to right, #000e54, #ff7f0f);
   padding: 15px 30px;
@@ -251,6 +266,31 @@ textarea {
   .slider-container {
     width: 90%;
     height: auto;
+  }
+  .event-slider-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  /* Move buttons below */
+  .slider-btn {
+    display: block;
+    width: auto;
+    margin: 10px auto;
+  }
+
+  .left-btn {
+    order: 1; /* Moves to first position */
+  }
+
+  .event-content {
+    order: 2; /* Keeps content in the middle */
+    width: 100%;
+  }
+
+  .right-btn {
+    order: 3; /* Moves to last position */
   }
   .slide-image {
     width: 100%;
