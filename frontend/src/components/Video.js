@@ -55,62 +55,57 @@ const VideoTestimony = () => {
     <div className="container text-center media-container">
       {/* 🔹 VIDEO SECTION */}
       <div className="media-section">
-        <h2>Video Testimonies</h2>
-        <div className="row justify-content-center">
-          {videos.map((video) => (
-            <div key={video.id} className="col-lg-5 col-md-6 col-12 media-card video-card">
-              {hoveredVideo === video.id ? (
-                video.type === "youtube" ? (
-                  <iframe
-                    src={`${video.src}?autoplay=1&mute=1`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    width="100%"
-                    height="200"
-                    onMouseOut={() => setHoveredVideo(null)}
-                  />
-                ) : (
-                  <video
-                    id={`video-${video.id}`}
-                    src={video.src}
-                    width="100%"
-                    height="200"
-                    autoPlay
-                    muted
-                    onClick={() => handleVideoClick(video)}
-                  />
-                )
-              ) : (
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  onMouseOver={() => setHoveredVideo(video.id)}
-                />
-              )}
-              <h4>{video.title}</h4>
-            </div>
-          ))}
-        </div>
+  <h2>Videos</h2>
+  <div className="media-row">
+    {videos.map((video) => (
+      <div key={video.id} className="media-card video-card">
+        {hoveredVideo === video.id ? (
+          video.type === "youtube" ? (
+            <iframe
+              src={`${video.src}?autoplay=1&mute=1`}
+              title={video.title}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              width="300"
+              height="200"
+              onMouseOut={() => setHoveredVideo(null)}
+            />
+          ) : (
+            <video
+              id={`video-${video.id}`}
+              src={video.src}
+              width="300"
+              height="200"
+              autoPlay
+              muted
+              onClick={() => handleVideoClick(video)}
+            />
+          )
+        ) : (
+          <img
+            src={video.thumbnail}
+            alt={video.title}
+            onMouseOver={() => setHoveredVideo(video.id)}
+          />
+        )}
+        <h4>{video.title}</h4>
       </div>
+    ))}
+  </div>
+</div>
 
-      {/* 🔹 PODCAST SECTION */}
-      <div className="media-section">
-        <h2>Podcasts</h2>
-        <div className="row justify-content-center">
-          {podcasts.map((podcast) => (
-            <div
-              key={podcast.id}
-              className="col-lg-5 col-md-6 col-12 media-card podcast-card"
-              onClick={() => handlePodcastClick(podcast)}
-            >
-              <img src={podcast.thumbnail} alt={podcast.title} />
-              <h4>{podcast.title}</h4>
-            </div>
-          ))}
-        </div>
+<div className="media-section">
+  <h2>Podcasts</h2>
+  <div className="podcast-row">
+    {podcasts.map((podcast) => (
+      <div key={podcast.id} className="media-card podcast-card" onClick={() => handlePodcastClick(podcast)}>
+        <img src={podcast.thumbnail} alt={podcast.title} />
+        <h4>{podcast.title}</h4>
       </div>
-    </div>
+    ))}
+  </div>
+</div>
+</div>
   );
 };
 
