@@ -138,7 +138,7 @@ textarea {
 }
 
 /* 🔹 VIDEO & PODCAST SECTION */
-.video-testimony-container {
+/* .video-testimony-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -183,7 +183,7 @@ textarea {
   flex-wrap: wrap;
 }
 
-/* 🔹 PODCAST CARDS */
+/* 🔹 PODCAST CARDS *
 .podcast-row {
   display: flex;
   justify-content: center;
@@ -206,7 +206,7 @@ textarea {
 }
 .podcast-card:hover {
   transform: scale(1.05);
-}
+} */
 
 /* 🔹 FOOTER */
 .footer {
@@ -255,7 +255,15 @@ textarea {
   .event-slider-container {
     flex-direction: column;
   }
+  /* .video-testimony-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  } */
   .video-testimony-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .podcast-row {
     flex-wrap: wrap;
     justify-content: center;
   }
