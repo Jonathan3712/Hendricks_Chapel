@@ -13,8 +13,8 @@ const videos = [
     type: "youtube"
   },
   {
-    id: 3,
-    src: require("../components/videos/video1.mp4"),
+    id: 2,
+    src: "https://www.youtube.com/embed/4KuzCmlTdW0",
     thumbnail: thumbnail,
     title: "Local Testimony",
     type: "local"
