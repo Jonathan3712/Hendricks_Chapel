@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../components/Style.css";
-import thumbnail from "./images/Image2.jpg";
+import "./Style.css";
+import thumbnail from "./images/Image3_test.jpg";
 import thumbnail2 from "./images/Image4.jpg";
 import thumbnail3 from "./images/Image5.jpg";
 
@@ -58,7 +58,7 @@ const VideoTestimony = () => {
         <h2>Video Testimonies</h2>
         <div className="row justify-content-center">
           {videos.map((video) => (
-            <div key={video.id} className="col-md-4 col-sm-6 col-12 media-card video-card">
+            <div key={video.id} className="col-lg-5 col-md-6 col-12 media-card video-card">
               {hoveredVideo === video.id ? (
                 video.type === "youtube" ? (
                   <iframe
@@ -101,7 +101,7 @@ const VideoTestimony = () => {
           {podcasts.map((podcast) => (
             <div
               key={podcast.id}
-              className="col-md-4 col-sm-6 col-12 media-card podcast-card"
+              className="col-lg-5 col-md-6 col-12 media-card podcast-card"
               onClick={() => handlePodcastClick(podcast)}
             >
               <img src={podcast.thumbnail} alt={podcast.title} />

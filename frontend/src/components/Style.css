@@ -214,7 +214,14 @@ textarea {
   text-align: center;
 }
 
-/* 🔹 MEDIA ROW (Videos & Podcasts) */
+/* 🔹 VIDEO & PODCAST ROW */
+.media-section {
+  background-color: #E2E8CE;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+}
+
 .media-row {
   display: flex;
   justify-content: center;
@@ -233,12 +240,12 @@ textarea {
 
 .video-card {
   width: 100%;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 .podcast-card {
   width: 100%;
-  max-width: 280px;
+  max-width: 320px;
 }
 
 .media-card img, .media-card iframe, .media-card video {
