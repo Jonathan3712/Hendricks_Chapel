@@ -18,6 +18,13 @@ const videos = [
     thumbnail: thumbnail,
     title: "Local Testimony",
     type: "local"
+  },
+  {
+    id: 3,
+    src: require("../components/videos/video1.mp4"),
+    thumbnail: thumbnail,
+    title: "Local Testimony",
+    type: "local"
   }
 ];
 
