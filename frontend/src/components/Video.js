@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import "../App.css";
+import "../components/Style.css";
 import thumbnail from "./images/Image2.jpg";
-// import thumbnail1 from "./images/Image1.jpg";
 import thumbnail2 from "./images/Image4.jpg";
-import thumbnail3 from "./images/Image5.jpg"
+import thumbnail3 from "./images/Image5.jpg";
 
 const videos = [
   {
@@ -23,14 +22,12 @@ const videos = [
 ];
 
 const podcasts = [
-  // <iframe src='https://620bf9fa719102-98329246.castos.com/player/1637848' width='100%' height='150'></iframe>
   {
     id: 4,
     src: "https://620bf9fa719102-98329246.castos.com/player/1637848",
     thumbnail: thumbnail3,
     title: "Campus Ministry ft.. Jay and Josh Koshy"
   },
-  // <iframe src='https://620bf9fa719102-98329246.castos.com/player/1767696' width='100%' height='150'></iframe>
   {
     id: 5,
     src: "https://620bf9fa719102-98329246.castos.com/player/1767696",
@@ -45,7 +42,6 @@ const VideoTestimony = () => {
   const handleVideoClick = (video) => {
     if (video.type === "local") {
       const videoElement = document.getElementById(`video-${video.id}`);
-      videoElement.requestFullscreen();
       videoElement.muted = false;
       videoElement.play();
     }
@@ -56,12 +52,13 @@ const VideoTestimony = () => {
   };
 
   return (
-    <div className="media-container">
+    <div className="container text-center media-container">
+      {/* 🔹 VIDEO SECTION */}
       <div className="media-section">
-        {/* <h2>Video Testimonies</h2> */}
-        <div className="media-row">
+        <h2>Video Testimonies</h2>
+        <div className="row justify-content-center">
           {videos.map((video) => (
-            <div key={video.id} className="media-card video-card">
+            <div key={video.id} className="col-md-4 col-sm-6 col-12 media-card video-card">
               {hoveredVideo === video.id ? (
                 video.type === "youtube" ? (
                   <iframe
@@ -69,7 +66,7 @@ const VideoTestimony = () => {
                     title={video.title}
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
-                    width="300"
+                    width="100%"
                     height="200"
                     onMouseOut={() => setHoveredVideo(null)}
                   />
@@ -77,7 +74,7 @@ const VideoTestimony = () => {
                   <video
                     id={`video-${video.id}`}
                     src={video.src}
-                    width="300"
+                    width="100%"
                     height="200"
                     autoPlay
                     muted
@@ -97,11 +94,16 @@ const VideoTestimony = () => {
         </div>
       </div>
 
+      {/* 🔹 PODCAST SECTION */}
       <div className="media-section">
-        {/* <h2>Podcasts</h2> */}
-        <div className="podcast-row">
+        <h2>Podcasts</h2>
+        <div className="row justify-content-center">
           {podcasts.map((podcast) => (
-            <div key={podcast.id} className="media-card podcast-card" onClick={() => handlePodcastClick(podcast)}>
+            <div
+              key={podcast.id}
+              className="col-md-4 col-sm-6 col-12 media-card podcast-card"
+              onClick={() => handlePodcastClick(podcast)}
+            >
               <img src={podcast.thumbnail} alt={podcast.title} />
               <h4>{podcast.title}</h4>
             </div>

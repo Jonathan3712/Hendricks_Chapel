@@ -6,6 +6,7 @@ import EventOnCampus from "./components/EventOnCampus"
 import EventSlider from "./components/EventSlider";
 import VideoTestimony from "./components/Video"
 import "./App.css";
+import "./components/Style.css";
 import EventRegistrationForm from "./components/EventRegistrationForm";
 import ContactForm from "./components/ContactForm";
 import Footer from "./components/Footer";
