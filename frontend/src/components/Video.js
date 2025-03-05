@@ -14,7 +14,7 @@ const videos = [
   },
   {
     id: 2,
-    src: "https://www.youtube.com/embed/4KuzCmlTdW0",
+    src: "https://www.youtube.com/embed/4KuzCmlTdW0?si=1F0nZaI53gzKchyL",
     thumbnail: thumbnail,
     title: "Local Testimony",
     type: "local"

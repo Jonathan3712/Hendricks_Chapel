@@ -20,7 +20,7 @@ const Footer = () => {
           </a>
         </div>
         
-        <p>&copy; {new Date().getFullYear()} Bridge Evangelical Chaplaincy. All Rights Reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Bridge Evangelical Chaplaincy. All Rights Reserved by Jay Koshy</p>
       </div>
     </footer>
   );
