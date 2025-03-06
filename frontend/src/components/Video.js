@@ -3,6 +3,7 @@ import "./Style.css";
 import thumbnail from "./images/Image1_grp2.jpg";
 import thumbnail2 from "./images/Image4.jpg";
 import thumbnail3 from "./images/Image2_grp.jpg";
+import thumbnail4 from "./images/Image5.jpg";
 
 const videos = [
   {
@@ -32,13 +33,13 @@ const podcasts = [
   {
     id: 4,
     src: "https://620bf9fa719102-98329246.castos.com/player/1637848",
-    thumbnail: thumbnail3,
+    thumbnail: thumbnail4,
     title: "Campus Ministry ft. Jay and Josh Koshy"
   },
   {
     id: 5,
     src: "https://620bf9fa719102-98329246.castos.com/player/1767696",
-    thumbnail: thumbnail3,
+    thumbnail: thumbnail4,
     title: "Trusting in God ft. Grecia Vasquez & Ana Ruth Villareal Garcia"
   }
 ];
@@ -46,6 +47,7 @@ const podcasts = [
 const VideoTestimony = () => {
   const [hoveredVideo, setHoveredVideo] = useState(null);
 
+  // eslint-disable-next-line no-unused-vars
   const handleVideoClick = (video) => {
     if (video.type === "local") {
       const videoElement = document.getElementById(`video-${video.id}`);
