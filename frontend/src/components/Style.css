@@ -259,6 +259,10 @@ textarea {
   cursor: pointer;
 }
 
+.media-card .video-card h4{
+  color: white;
+}
+
 /* 🔹 PODCAST CARDS */
 .podcast-row {
   display: flex;
