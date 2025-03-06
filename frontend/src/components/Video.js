@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Style.css";
-import thumbnail from "./images/Image3_test.jpg";
+import thumbnail from "./images/Image1_grp2.jpg";
 import thumbnail2 from "./images/Image4.jpg";
-import thumbnail3 from "./images/Image5.jpg";
+import thumbnail3 from "./images/Image2_grp.jpg";
 
 const videos = [
   {
