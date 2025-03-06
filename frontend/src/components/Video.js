@@ -66,33 +66,53 @@ const VideoTestimony = () => {
         <div className="media-row">
           {videos.map((video) => (
             <div key={video.id} className="media-card video-card">
-              {hoveredVideo === video.id ? (
-                video.type === "youtube" ? (
-                  <iframe
-                    src={`${video.src}?autoplay=1&mute=1`}
-                    title={video.title}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    onMouseOut={() => setHoveredVideo(null)}
-                  />
-                ) : (
-                  <video
-                    id={`video-${video.id}`}
-                    src={video.src}
-                    autoPlay
-                    muted
-                    onClick={() => handleVideoClick(video)}
-                  />
-                )
-              ) : (
-                <img
-                  src={video.thumbnail}
-                  alt={video.title}
-                  onMouseOver={() => setHoveredVideo(video.id)}
-                />
-              )}
-              <h4>{video.title}</h4>
-            </div>
+            {hoveredVideo === video.id ? (
+              <iframe
+                src={`${video.src}?autoplay=1&mute=1`}
+                title={video.title}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                width="300"
+                height="200"
+                onMouseOut={() => setHoveredVideo(null)}
+              />
+            ) : (
+              <img
+                src={video.thumbnail}
+                alt={video.title}
+                onMouseOver={() => setHoveredVideo(video.id)}
+              />
+            )}
+            <h4>{video.title}</h4>
+          </div>
+            // <div key={video.id} className="media-card video-card">
+            //   {hoveredVideo === video.id ? (
+            //     video.type === "youtube" ? (
+            //       <iframe
+            //         src={`${video.src}?autoplay=1&mute=1`}
+            //         title={video.title}
+            //         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            //         allowFullScreen
+            //         onMouseOut={() => setHoveredVideo(null)}
+            //       />
+            //     ) : (
+            //       <video
+            //         id={`video-${video.id}`}
+            //         src={video.src}
+            //         autoPlay
+            //         muted
+            //         onClick={() => handleVideoClick(video)}
+            //       />
+            //     )
+            //   ) : (
+            //     <img
+            //       src={video.thumbnail}
+            //       alt={video.title}
+            //       onMouseOver={() => setHoveredVideo(video.id)}
+            //     />
+            //   )}
+            //   <h4>{video.title}</h4>
+            // </div>
           ))}
         </div>
       </div>
