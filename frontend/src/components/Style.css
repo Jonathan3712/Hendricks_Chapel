@@ -236,6 +236,7 @@ textarea {
 /* 🔹 VIDEO & PODCAST CARDS */
 .media-card {
   background-color: #262626;
+  color: #ffffff;
   padding: 10px;
   border-radius: 5px;
   transition: transform 0.2s ease;
@@ -257,10 +258,6 @@ textarea {
   object-fit: cover;
   border-radius: 8px;
   cursor: pointer;
-}
-
-.media-card .video-card h4{
-  color: white;
 }
 
 /* 🔹 PODCAST CARDS */
