@@ -22,7 +22,8 @@ const videos = [
   },
   {
     id: 3,
-    src: require("../components/videos/video1.mp4"),
+    // src: require("../components/videos/video1.mp4"),
+    src: "https://www.youtube.com/embed/sQI40rux48c",
     thumbnail: thumbnail3,
     title: "Local Testimony",
     type: "local"
