@@ -22,7 +22,7 @@ const videos = [
   {
     id: 3,
     src: require("../components/videos/video1.mp4"),
-    thumbnail: thumbnail,
+    thumbnail: thumbnail3,
     title: "Local Testimony",
     type: "local"
   }
