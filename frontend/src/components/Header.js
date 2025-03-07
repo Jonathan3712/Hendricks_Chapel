@@ -13,7 +13,7 @@ function Header() {
   return (
     <header className="head_of">
       <div className="header-content">
-        <h1>Welcome to the Bridge - Evangelical Chaplaincy Hendricks Chapel</h1><br></br>
+        <h1>Welcome to the Bridge Group - Evangelical Chaplaincy Hendricks Chapel</h1><br></br>
         <h2>Syracuse University</h2>
         <hr className='bold1'></hr>
       </div>
